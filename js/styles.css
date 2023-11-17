@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.first-page {
+  background-color: #ffd9c3;
+  background-image: url(images/bg1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 844px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 55px;
+}
+
+ul li {
+  margin-left: 42px;
+  list-style: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 133.333% */
+}
+
+a {
+  text-decoration: none;
+  color: #446381;
+}
+
+header {
+  padding-top: 20px;
+  margin: auto;
+  width: 1167px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 60px;
+}
+
+.sbtn {
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(95deg, #4499d9 17.46%, #7367be 87.77%);
+    outline: none;
+    border: none;
+    font-family: "Josefin Sans";
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition:0.4s ease;
+    z-index: 1;
+}
+.sbtn:hover{
+    box-shadow:0px 2px 17px rgba(99, 137, 168, 0.7);
+    
+}
+/* .sbtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    
+    width: 100%;
+    height: 100%;
+    background: #4499d9; 
+    transition: left 0.01s ease;
+    z-index: -1;
+} */
+
+
+.mbtn {
+  width: 207px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(95deg, #4499d9 17.46%, #7367be 87.77%);
+  outline: none;
+  border: none;
+  font-family: "Josefin Sans";
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+h3 {
+  color: #446381;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  /* 104.348% */
+}
+
+h1 {
+  color: #eb8382;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px;
+  /* 110.294% */
+}
+
+p {
+  color: #826f8c;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  /* 161.111% */
+}
+
+.left-desc {
+  margin-top: 139px;
+  width: 518px;
+}
+
+.left-desc h3 {
+  margin-bottom: 26px;
+}
+
+.left-desc h1 {
+  margin-bottom: 31px;
+}
+
+.left-desc p {
+  margin-bottom: 36px;
+}
+
+.content {
+  margin: auto;
+  width: 1167px;
+}
+
+.right-images {
+  position: absolute;
+  top: 148px;
+  right: 187px;
+
+  animation: updown 2s infinite alternate;
+}
+
+.itembox1 {
+  top: -16px;
+  left: -40px;
+  position: absolute;
+  padding: 18.57px 11px 11px 17px;
+  width: 211px;
+  height: 95px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 5px 15px rgba(235, 131, 130, 0.7);
+}
+
+.itembox2 {
+  bottom: -16px;
+  right: -125px;
+  position: absolute;
+  padding: 18.57px 11px 11px 96px;
+  width: 210px;
+  height: 95px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 5px 15px rgba(235, 131, 130, 0.7);
+}
+
+.name {
+  color: #446381;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px; /* 120% */
+  margin-bottom: 5.29px;
+}
+.price {
+  color: #eb8382;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10px; /* 100% */
+  margin-bottom: 5.29px;
+}
+
+.stars {
+  margin-top: -5px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  text-align: center;
+}
+.stars img {
+  height: 100%;
+}
+.stars p {
+  color: #446381;
+  font-size: 8px;
+  font-weight: 500;
+  margin-bottom: -2px;
+}
+
+.item {
+  position: absolute;
+  top: 23px;
+  right: 10.85px;
+}
+
+.item2 {
+  position: absolute;
+  top: 19.6px;
+  left: 12.5px;
+}
+
+#animated {
+  position: absolute;
+  top: 657px;
+  left: 452px;
+  animation: lol 6s linear infinite;
+}
+
+@keyframes lol {
+  from {
+    transform: rotate(0deg); /* Начальное положение - 0 градусов */
+  }
+  to {
+    transform: rotate(
+      360deg
+    ); /* Конечное положение - 360 градусов (полный оборот) */
+  }
+}
+
+@keyframes updown {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-35px);
+  }
+}
